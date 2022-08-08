@@ -1,3 +1,4 @@
+#ifdef TEST
 #include "sht30.h"
 
 void I2c_write(uint8_t addre, uint16_t command);
@@ -114,3 +115,5 @@ static uint8_t crc8(const uint8_t *data, int len) {
   }
   return crc;
 }
+
+#endif // TEST
