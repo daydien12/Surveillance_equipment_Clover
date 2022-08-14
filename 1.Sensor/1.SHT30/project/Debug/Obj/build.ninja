@@ -23,11 +23,12 @@ rule browsedata
 build stm8s_it.pbi : index stm8s_it.xcl
 build i2c.pbi : index i2c.xcl
 build main.pbi : index main.xcl
+build ringbuffer.pbi : index ringbuffer.xcl
 build sht30.pbi : index sht30.xcl
 build uart.pbi : index uart.xcl
 build test_part0.pbi : link stm8s_it.pbi i2c.pbi
-build test_part1.pbi : link main.pbi sht30.pbi
-build test_part2.pbi : link uart.pbi
+build test_part1.pbi : link main.pbi ringbuffer.pbi
+build test_part2.pbi : link sht30.pbi uart.pbi
 build test.pbd : link test_part0.pbi test_part1.pbi test_part2.pbi
 build test.pbw : browsedata test.pbd
 

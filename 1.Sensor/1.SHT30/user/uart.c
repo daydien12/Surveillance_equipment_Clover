@@ -30,7 +30,9 @@
 #include "stm8s.h"
 #include "string.h"
 #include "stdio.h"
+#include "ringbuffer.h"
 #define string_size 80
+
 char RX_FLAG_END_LINE = 0;
 char RRX[string_size];
 unsigned int RXI = 0;

@@ -1,0 +1,30 @@
+---
+:source:
+  :path: test
+  :file: test_ringbuffer.c
+:successes:
+- :test: test_function_ringbuffer_init_successful
+  :line: 14
+  :message: ''
+  :unity_test_time: 0
+- :test: test_function_ringbuffer_init_error
+  :line: 30
+  :message: ''
+  :unity_test_time: 0
+- :test: test_function_ringbuffer_push_pop
+  :line: 44
+  :message: ''
+  :unity_test_time: 0
+- :test: 'test_function_ringbuffer_push_pop_circular '
+  :line: 78
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 4
+  :passed: 4
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.011287900000752416

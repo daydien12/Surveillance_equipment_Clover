@@ -1645,6 +1645,9 @@
             <name>$PROJ_DIR$\..\user\i2c.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\user\ringbuffer.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\user\uart.h</name>
         </file>
     </group>
@@ -1673,6 +1676,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\main.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\user\ringbuffer.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\sht30.c</name>
