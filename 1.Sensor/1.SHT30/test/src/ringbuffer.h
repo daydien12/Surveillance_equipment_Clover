@@ -6,9 +6,6 @@
 extern "C" {
 #endif
 
-
-
-
 typedef struct 
 {
     unsigned int head;
@@ -32,8 +29,7 @@ typedef enum
 _rb_status_ ringbuffer_init(_ringbuffer_t *_rb_type_t_, unsigned char *arr_buffer, unsigned int size);
 _rb_status_ ringbuffer_push(_ringbuffer_t *_rb_type_t_, unsigned char data);
 _rb_status_ ringbuffer_pop(_ringbuffer_t *_rb_type_t_, unsigned char *data);
-_rb_status_ ringbuffer_full(_ringbuffer_t *_rb_type_t_);
-_rb_status_ ringbuffer_empty(_ringbuffer_t *_rb_type_t_);
+
 unsigned int ringbuffer_get_tail(_ringbuffer_t *_rb_type_t_);
 unsigned int ringbuffer_get_head(_ringbuffer_t *_rb_type_t_);
 

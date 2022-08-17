@@ -3,7 +3,8 @@
 
 static void ringbuffer_increase_head(_ringbuffer_t *_rb_type_t_);
 static void ringbuffer_increase_tail(_ringbuffer_t *_rb_type_t_);
-
+static _rb_status_ ringbuffer_full(_ringbuffer_t *_rb_type_t_);
+static _rb_status_ ringbuffer_empty(_ringbuffer_t *_rb_type_t_);
 _rb_status_ ringbuffer_init(_ringbuffer_t *_rb_type_t_, unsigned char *arr_buffer, unsigned int size)
 {
     if((size <= 0))

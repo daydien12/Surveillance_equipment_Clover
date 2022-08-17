@@ -75,7 +75,7 @@ void test_function_ringbuffer_push_pop(void)
     TEST_ASSERT_EQUAL_INT32(Size_Array, ringbuffer_Test.tail);
 }
 
-void test_function_ringbuffer_push_pop_circular (void)
+void test_function_ringbuffer_push_pop_circular(void)
 {
     
     _ringbuffer_t ringbuffer_Test;
@@ -92,7 +92,7 @@ void test_function_ringbuffer_push_pop_circular (void)
     TEST_ASSERT_EQUAL_INT64(Arrary_Test, ringbuffer_Test.data);             // check address
     TEST_ASSERT_EQUAL_INT32(Init_value_head, ringbuffer_Test.head);         // check khởi tạo head
     TEST_ASSERT_EQUAL_INT32(Init_value_head, ringbuffer_Test.tail);         // check khơi tạo tail
-    TEST_ASSERT_EQUAL_INT32(Size_Array+1, ringbuffer_Test.buffer_length);   // check leng array
+    TEST_ASSERT_EQUAL_INT32(Size_Array+1, ringbuffer_Test.buffer_length);   // check độ dài chuỗi array
     
     for(i=0; i<Size_Array + circular_add_test; i++)
     {
