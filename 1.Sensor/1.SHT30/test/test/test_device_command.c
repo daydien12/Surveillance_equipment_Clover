@@ -14,7 +14,7 @@ void tearDown(void)
 void test_function_ringbuffer_init_successful(void)
 {
     char array_test[100];
-    comm_asktype(125, array_test);
+    comm_asktype(1, array_test);
     printf("%s", array_test);
 }
 
