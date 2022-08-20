@@ -37,7 +37,8 @@ typedef enum
 }_comm_status_e;
 
 _comm_status_e comm_asktype(const _comm_port_number_e _port_number_, char* _arr_data_, unsigned char _size_arr_);
-_comm_status_e comm_ansertype();
+_comm_status_e comm_answertype(const _comm_port_number_e _port_number_, const _comm_port_number_e _typed_sensor_, char* _arr_data_, unsigned char _size_arr_);
+_comm_status_e comm_askdata(const _comm_port_number_e _port_number_, char* _arr_data_, unsigned char _size_arr_);
 #ifdef __cplusplus
 }
 #endif
