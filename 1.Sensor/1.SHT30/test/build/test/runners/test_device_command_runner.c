@@ -10,7 +10,10 @@ char* GlobalOrderError;
 /*=======External Functions This Runner Calls=====*/
 extern void setUp(void);
 extern void tearDown(void);
-extern void test_function_ringbuffer_init_successful(void);
+extern void test_function_command_asktype(void);
+extern void test_function_command_answertype(void);
+extern void test_function_command_askdata(void);
+extern void test_function_command_detect_askdata(void);
 
 
 /*=======Mock Management=====*/
@@ -75,7 +78,10 @@ static void run_test(UnityTestFunction func, const char* name, UNITY_LINE_TYPE l
 int main(void)
 {
   UnityBegin("test_device_command.c");
-  run_test(test_function_ringbuffer_init_successful, "test_function_ringbuffer_init_successful", 18);
+  run_test(test_function_command_asktype, "test_function_command_asktype", 16);
+  run_test(test_function_command_answertype, "test_function_command_answertype", 37);
+  run_test(test_function_command_askdata, "test_function_command_askdata", 65);
+  run_test(test_function_command_detect_askdata, "test_function_command_detect_askdata", 86);
 
   return UnityEnd();
 }

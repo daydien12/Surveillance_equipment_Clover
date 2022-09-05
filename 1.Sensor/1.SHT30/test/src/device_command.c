@@ -3,76 +3,84 @@
 static void string_crc(char * destination);
 static void string_cat(char *destination, const char * source);
 static void string_copy(char * destination, const char * source);
+static void string_split(char destination[][20], const char *source);
+static unsigned char string_cmp_len(const char *destination, const char * source, const unsigned char length);
 
 static unsigned char string_length(const char *data);
 static char* conver_unsigned_intTostr(const unsigned int _data_);
-_comm_status_e comm_asktype(_comm_data_struct_t *_data_struct_)
+static unsigned char conver_unsigned_strToint(const unsigned int _data_);
+
+
+_comm_status_e comm_create_command(_comm_data_struct_create_t *_data_struct_)
 {
+    if(_data_struct_->port_number >= COMM_PortEnd)
+    {
+        return COMM_ERROR;
+    }
+
+    switch(_data_struct_->type_msg)
+    {
+        case COMM_AskType:
+            string_copy(_data_struct_->datastr, (char*)COMM_HEADER);
+            string_cat(_data_struct_->datastr, ",");
+            string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->type_msg));
+            string_cat(_data_struct_->datastr, ",");
+            string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->port_number));
+            string_cat(_data_struct_->datastr, ",");
+            string_crc(_data_struct_->datastr);
+        break;
+
+        case COMM_AnswerType:
+            if(_data_struct_->type_sensor >= Sensor_end)
+            {
+                return COMM_ERROR;
+            }
+            string_copy(_data_struct_->datastr, (char*)COMM_HEADER);
+            string_cat(_data_struct_->datastr, ",");
+            string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->type_msg));
+            string_cat(_data_struct_->datastr, ",");
+            string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->port_number));
+            string_cat(_data_struct_->datastr, ",");
+            string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->type_sensor));
+            string_cat(_data_struct_->datastr, ",");
+            string_crc(_data_struct_->datastr);
+        break;
+
+        case COMM_AskData:
+            string_copy(_data_struct_->datastr, (char*)COMM_HEADER);
+            string_cat(_data_struct_->datastr, ",");
+            string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->type_msg));
+            string_cat(_data_struct_->datastr, ",");
+            string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->port_number));
+            string_cat(_data_struct_->datastr, ",");
+            string_crc(_data_struct_->datastr);
+            return COMM_OK;
+        break;
+
+        case COMM_AnswerData:
+
+        break;
+    }
    
-    if((_data_struct_->port_number >= COMM_PortEnd))
-    {
-        return COMM_ERROR;
-    }
-    string_copy(_data_struct_->datastr, (char*)COMM_HEADER);
-    string_cat(_data_struct_->datastr, ",");
-    string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->type_msg));
-    string_cat(_data_struct_->datastr, ",");
-    string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->port_number));
-    string_cat(_data_struct_->datastr, ",");
-    string_crc(_data_struct_->datastr);
-    return COMM_OK;
-}
-/*
-_comm_status_e comm_asktype(const _comm_port_number_e _port_number_, char* _arr_data_, unsigned char _size_arr_)
-{
-    if((_size_arr_ < 15)||(_port_number_ >= COMM_PortEnd))
-    {
-        return COMM_ERROR;
-    }
-    string_copy(_arr_data_, (char*)COMM_HEADER);
-    string_cat(_arr_data_, ",");
-    string_cat(_arr_data_, conver_unsigned_intTostr(COMM_AskType));
-    string_cat(_arr_data_, ",");
-    string_cat(_arr_data_, conver_unsigned_intTostr(_port_number_));
-    string_cat(_arr_data_, ",");
-    string_crc(_arr_data_);
     return COMM_OK;
 }
 
-_comm_status_e comm_answertype(const _comm_port_number_e _port_number_, const _comm_port_number_e _typed_sensor_, char* _arr_data_, unsigned char _size_arr_)
+_comm_status_e comm_detect_command(char *_str_datain_, unsigned char _size_datain_,_comm_data_struct_detect_t *_data_struct_)
 {
-    if((_size_arr_ < 20)||(_port_number_ >= COMM_PortEnd))
+    char temp_str[10][20], i;
+    if((!string_cmp_len(_str_datain_, COMM_HEADER, 5))&&(_str_datain_[_size_datain_-1] == '#'))
     {
         return COMM_ERROR;
     }
-    string_copy(_arr_data_, (char*)COMM_HEADER);
-    string_cat(_arr_data_, ",");
-    string_cat(_arr_data_, conver_unsigned_intTostr(COMM_AnswerType));
-    string_cat(_arr_data_, ",");
-    string_cat(_arr_data_, conver_unsigned_intTostr(_port_number_));
-    string_cat(_arr_data_, ",");
-    string_cat(_arr_data_, conver_unsigned_intTostr(_typed_sensor_));
-    string_cat(_arr_data_, ",");
-    string_crc(_arr_data_);
+    string_split(temp_str, _str_datain_);
+    
+    for(i=0; i<5; i++)
+    {
+        printf("(%s)\n", temp_str[i]);
+    }
     return COMM_OK;
 }
 
-_comm_status_e comm_askdata(const _comm_port_number_e _port_number_, char* _arr_data_, unsigned char _size_arr_)
-{
-    if((_size_arr_ < 15)||(_port_number_ >= COMM_PortEnd))
-    {
-        return COMM_ERROR;
-    }
-    string_copy(_arr_data_, (char*)COMM_HEADER);
-    string_cat(_arr_data_, ",");
-    string_cat(_arr_data_, conver_unsigned_intTostr(COMM_AskData));
-    string_cat(_arr_data_, ",");
-    string_cat(_arr_data_, conver_unsigned_intTostr(_port_number_));
-    string_cat(_arr_data_, ",");
-    string_crc(_arr_data_);
-    return COMM_OK;
-}
-*/
 static unsigned char string_length(const char *data)
 {
     unsigned char count = 0;
@@ -109,6 +117,26 @@ static void string_cat(char *destination, const char * source)
     *destination = '\0';
 }
 
+static void string_split(char destination[][20], const char *source)
+{
+    unsigned char i = 0, row = 0, col = 0;
+    while(source[i]!='#')
+    {
+        if(source[i] == ',')
+        {
+            destination[col][row] = '\0';
+            col++;
+            row = 0;
+        }
+        else
+        {
+            destination[col][row] = source[i];
+            row++;
+        }
+        i++;
+    }
+}
+
 static char* conver_unsigned_intTostr(const unsigned int _data_)
 {
     static char arr[20];
@@ -139,6 +167,20 @@ static char* conver_unsigned_intTostr(const unsigned int _data_)
     return arr;
 }
 
+static unsigned char string_cmp_len(const char * destination, const char * source, const unsigned char length)
+{
+    int i=0;
+    for(i=0; i<length; i++)
+    {
+        if(destination[i] != source[i])
+        {
+            return 0;
+        }
+        //printf("-%c-%c\n", destination[i], source[i]);
+    }
+    return 1;
+}
+
 static void string_crc(char * destination)
 {
     unsigned char temp_crc = 0;
@@ -150,3 +192,4 @@ static void string_crc(char * destination)
     string_cat(destination, conver_unsigned_intTostr(temp_crc));
     string_cat(destination, "#");
 }
+

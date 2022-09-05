@@ -3,18 +3,37 @@
   :path: test
   :file: test_device_command.c
 :successes:
-- :test: test_function_ringbuffer_init_successful
-  :line: 18
+- :test: test_function_command_asktype
+  :line: 16
+  :message: ''
+  :unity_test_time: 0
+- :test: test_function_command_answertype
+  :line: 37
+  :message: ''
+  :unity_test_time: 0
+- :test: test_function_command_askdata
+  :line: 65
+  :message: ''
+  :unity_test_time: 0
+- :test: test_function_command_detect_askdata
+  :line: 86
   :message: ''
   :unity_test_time: 0
 :failures: []
 :ignores: []
 :counts:
-  :total: 1
-  :passed: 1
+  :total: 4
+  :passed: 4
   :failed: 0
   :ignored: 0
 :stdout:
-- ''
 - "$COMM,1,7,2#"
-:time: 0.011261000000558852
+- "$COMM,2,7,0,29#"
+- "$COMM,3,7,0#"
+- "$COMM,2,7,0,29#"
+- "($COMM)"
+- "(2)"
+- "(7)"
+- "(0)"
+- "(29)"
+:time: 0.007479800000510295

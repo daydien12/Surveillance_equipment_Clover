@@ -49,15 +49,18 @@ typedef struct
     _comm_type_command_e        type_msg;
     _comm_type_sensor_e         type_sensor;
     char                        datastr[50];
-}_comm_data_struct_t;
+}_comm_data_struct_create_t;
 
-_comm_status_e comm_asktype(_comm_data_struct_t *_data_struct_);
-/*
-_comm_status_e comm_asktype(const _comm_port_number_e _port_number_, char* _arr_data_, unsigned char _size_arr_);
-_comm_status_e comm_answertype(const _comm_port_number_e _port_number_, const _comm_port_number_e _typed_sensor_, char* _arr_data_, unsigned char _size_arr_);
-_comm_status_e comm_askdata(const _comm_port_number_e _port_number_, char* _arr_data_, unsigned char _size_arr_);
-*/
-//_comm_status_e comm_detectcommand(char* _arr_data_);
+typedef struct 
+{
+    _comm_port_number_e         port_number;
+    _comm_type_command_e        type_msg;
+    _comm_type_sensor_e         type_sensor;
+}_comm_data_struct_detect_t;
+
+
+_comm_status_e comm_create_command(_comm_data_struct_create_t *_data_struct_);
+_comm_status_e comm_detect_command(char *_str_datain_, unsigned char _size_datain_,_comm_data_struct_detect_t *_data_struct_);
 
 #ifdef __cplusplus
 }
