@@ -6,7 +6,23 @@ static void string_copy(char * destination, const char * source);
 
 static unsigned char string_length(const char *data);
 static char* conver_unsigned_intTostr(const unsigned int _data_);
-
+_comm_status_e comm_asktype(_comm_data_struct_t *_data_struct_)
+{
+   
+    if((_data_struct_->port_number >= COMM_PortEnd))
+    {
+        return COMM_ERROR;
+    }
+    string_copy(_data_struct_->datastr, (char*)COMM_HEADER);
+    string_cat(_data_struct_->datastr, ",");
+    string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->type_msg));
+    string_cat(_data_struct_->datastr, ",");
+    string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->port_number));
+    string_cat(_data_struct_->datastr, ",");
+    string_crc(_data_struct_->datastr);
+    return COMM_OK;
+}
+/*
 _comm_status_e comm_asktype(const _comm_port_number_e _port_number_, char* _arr_data_, unsigned char _size_arr_)
 {
     if((_size_arr_ < 15)||(_port_number_ >= COMM_PortEnd))
@@ -56,7 +72,7 @@ _comm_status_e comm_askdata(const _comm_port_number_e _port_number_, char* _arr_
     string_crc(_arr_data_);
     return COMM_OK;
 }
-
+*/
 static unsigned char string_length(const char *data)
 {
     unsigned char count = 0;
@@ -129,10 +145,8 @@ static void string_crc(char * destination)
     char *arr = destination;
     while(*arr != '\0')
     {
-        //printf("%c", *arr);
         temp_crc ^= *arr++;
     }
-    //printf("\n%d ", temp_crc);
     string_cat(destination, conver_unsigned_intTostr(temp_crc));
     string_cat(destination, "#");
 }

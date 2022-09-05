@@ -75,7 +75,7 @@ static void run_test(UnityTestFunction func, const char* name, UNITY_LINE_TYPE l
 int main(void)
 {
   UnityBegin("test_device_command.c");
-  run_test(test_function_ringbuffer_init_successful, "test_function_ringbuffer_init_successful", 14);
+  run_test(test_function_ringbuffer_init_successful, "test_function_ringbuffer_init_successful", 18);
 
   return UnityEnd();
 }

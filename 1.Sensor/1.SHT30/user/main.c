@@ -2,7 +2,7 @@
 #include "uart.h"
 #include "i2c.h"
 #include "sht30.h"
-
+#include "sys.h"
 //D6-rx
 //D5-tx
 void delay_ms(int a)

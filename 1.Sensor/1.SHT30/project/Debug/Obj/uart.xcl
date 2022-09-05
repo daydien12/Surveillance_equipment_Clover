@@ -1,26 +1,26 @@
-"H:\2.project\2022\thang 8\1.ThietBi_GS\1.Sensor\1.SHT30\user\uart.c"
+"C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Sensor\1.SHT30\user\uart.c"
 -std=c99
 -ferror-limit=0
 -fbracket-depth=512
 -MD
 -MF
-H:\2.project\2022\thang 8\1.ThietBi_GS\1.Sensor\1.SHT30\project\Debug\Obj\uart.pbi.dep
+C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Sensor\1.SHT30\project\Debug\Obj\uart.pbi.dep
 -o
 uart.pbi
 -I
-H:\2.project\2022\thang 8\1.ThietBi_GS\1.Sensor\1.SHT30\user
+C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Sensor\1.SHT30\user
 -I
-H:\2.project\2022\thang 8\1.ThietBi_GS\1.Sensor\1.SHT30\project\..\library
+C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Sensor\1.SHT30\project\..\library
 -I
-H:\2.project\2022\thang 8\1.ThietBi_GS\1.Sensor\1.SHT30\project\..\user
+C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Sensor\1.SHT30\project\..\user
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\inc\c
 -I
-H:\2.project\2022\thang 8\1.ThietBi_GS\1.Sensor\1.SHT30\library
+C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Sensor\1.SHT30\library
 -I
-H:\2.project\2022\thang 8\1.ThietBi_GS\1.Sensor\1.SHT30\user
+C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Sensor\1.SHT30\user
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

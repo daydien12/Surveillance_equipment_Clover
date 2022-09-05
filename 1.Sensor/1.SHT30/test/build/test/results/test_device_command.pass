@@ -4,7 +4,7 @@
   :file: test_device_command.c
 :successes:
 - :test: test_function_ringbuffer_init_successful
-  :line: 14
+  :line: 18
   :message: ''
   :unity_test_time: 0
 :failures: []
@@ -17,6 +17,4 @@
 :stdout:
 - ''
 - "$COMM,1,7,2#"
-- "$COMM,2,7,5,24#"
-- "$COMM,3,7,0#"
-:time: 0.016979100000753533
+:time: 0.011261000000558852

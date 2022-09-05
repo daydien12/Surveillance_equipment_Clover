@@ -2159,10 +2159,16 @@
             <name>$PROJ_DIR$\..\user\DELAY.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\user\device_command.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\user\i2c.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\ringbuffer.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\user\sys.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\uart.h</name>
@@ -2189,6 +2195,9 @@
     <group>
         <name>user</name>
         <file>
+            <name>$PROJ_DIR$\..\user\device_command.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\user\i2c.c</name>
         </file>
         <file>
@@ -2199,6 +2208,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\sht30.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\user\sys.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\uart.c</name>

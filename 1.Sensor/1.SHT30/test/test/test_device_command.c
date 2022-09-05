@@ -1,7 +1,11 @@
-#ifdef TEST
-#include "unity.h"
+
+
 #include "device_command.h"
 #include "ringbuffer.h"
+#include "unity.h"
+
+#ifdef TEST
+
 
 void setUp(void)
 {
@@ -11,16 +15,22 @@ void tearDown(void)
 {
 }
 
-void test_function_ringbuffer_init_successful(void)
+void test_function_ringbuffer_asktype(void)
 {
-    char array_test[20] = "null" ;
-    comm_asktype(COMM_Port8, array_test, sizeof(array_test));
-    printf("\n%s", array_test);
-    comm_answertype(COMM_Port8, 5, array_test, sizeof(array_test));
-    printf("\n%s", array_test);
-    comm_askdata(COMM_Port8, array_test, sizeof(array_test));
-    printf("\n%s", array_test);
-    //printf("\n %d %d %d %d %d", COMM_Port1, COMM_Port2, COMM_Port3, COMM_Port4, COMM_PortEnd);
+    _comm_data_struct_t struct_test_comm;
+    struct_test_comm.port_number = COMM_Port8;
+    struct_test_comm.type_msg = COMM_AskType;
+    
+    TEST_ASSERT_EQUAL_INT8(comm_asktype(&struct_test_comm), COMM_OK);
+    printf("\n%s", struct_test_comm.datastr);
+
+    struct_test_comm.port_number = COMM_PortEnd;
+    struct_test_comm.type_msg = COMM_AskType;
+    TEST_ASSERT_EQUAL_INT8(comm_asktype(&struct_test_comm), COMM_ERROR);
+
+    struct_test_comm.port_number = 10;
+    struct_test_comm.type_msg = COMM_AskType;
+    TEST_ASSERT_EQUAL_INT8(comm_asktype(&struct_test_comm), COMM_ERROR);
 }
 
 
