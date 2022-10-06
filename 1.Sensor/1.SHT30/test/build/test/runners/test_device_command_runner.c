@@ -13,7 +13,8 @@ extern void tearDown(void);
 extern void test_function_command_asktype(void);
 extern void test_function_command_answertype(void);
 extern void test_function_command_askdata(void);
-extern void test_function_command_detect_askdata(void);
+extern void test_function_command_answerdata (void);
+extern void test_function_command_detect(void);
 
 
 /*=======Mock Management=====*/
@@ -79,9 +80,10 @@ int main(void)
 {
   UnityBegin("test_device_command.c");
   run_test(test_function_command_asktype, "test_function_command_asktype", 16);
-  run_test(test_function_command_answertype, "test_function_command_answertype", 37);
-  run_test(test_function_command_askdata, "test_function_command_askdata", 65);
-  run_test(test_function_command_detect_askdata, "test_function_command_detect_askdata", 86);
+  run_test(test_function_command_answertype, "test_function_command_answertype", 43);
+  run_test(test_function_command_askdata, "test_function_command_askdata", 77);
+  run_test(test_function_command_answerdata , "test_function_command_answerdata ", 103);
+  run_test(test_function_command_detect, "test_function_command_detect", 136);
 
   return UnityEnd();
 }

@@ -3,13 +3,19 @@
 static void string_crc(char * destination);
 static void string_cat(char *destination, const char * source);
 static void string_copy(char * destination, const char * source);
-static void string_split(char destination[][20], const char *source);
+static char string_split(char destination[][20], const char *source);
+static unsigned char string_length(const char *data);
 static unsigned char string_cmp_len(const char *destination, const char * source, const unsigned char length);
 
-static unsigned char string_length(const char *data);
-static char* conver_unsigned_intTostr(const unsigned int _data_);
-static unsigned char conver_unsigned_strToint(const unsigned int _data_);
 
+static char* conver_unsigned_intTostr(const unsigned int _data_);
+static unsigned int conver_unsigned_strToint(const char *_data_);
+
+static char* conver_floatTostr(const float _data_, unsigned char afterpoint);
+static float conver_strTofloat(const char *_data_);
+
+
+static unsigned char checksum(const char *_data_str_);
 
 _comm_status_e comm_create_command(_comm_data_struct_create_t *_data_struct_)
 {
@@ -58,25 +64,71 @@ _comm_status_e comm_create_command(_comm_data_struct_create_t *_data_struct_)
         break;
 
         case COMM_AnswerData:
-
+           string_copy(_data_struct_->datastr, (char*)COMM_HEADER);
+            string_cat(_data_struct_->datastr, ",");
+            string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->type_msg));
+            string_cat(_data_struct_->datastr, ",");
+            string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->port_number));
+            string_cat(_data_struct_->datastr, ",");
+            string_cat(_data_struct_->datastr, conver_unsigned_intTostr(_data_struct_->type_sensor));
+            string_cat(_data_struct_->datastr, ",");
+            if(_data_struct_->type_sensor == Sensor_1)
+            {
+                string_cat(_data_struct_->datastr, conver_floatTostr(_data_struct_->Sensor.Sensor_1, 4));
+                string_cat(_data_struct_->datastr, ",");
+            }
+            string_crc(_data_struct_->datastr);
         break;
     }
-   
     return COMM_OK;
 }
 
-_comm_status_e comm_detect_command(char *_str_datain_, unsigned char _size_datain_,_comm_data_struct_detect_t *_data_struct_)
+_comm_status_e comm_detect_command(char *_str_datain_, _comm_data_struct_detect_t *_data_struct_)
 {
-    char temp_str[10][20], i;
-    if((!string_cmp_len(_str_datain_, COMM_HEADER, 5))&&(_str_datain_[_size_datain_-1] == '#'))
+    char temp_str[10][20];
+    if((!string_cmp_len(_str_datain_, COMM_HEADER, 5))||(_str_datain_[string_length(_str_datain_)-1] != '#'))
     {
         return COMM_ERROR;
     }
-    string_split(temp_str, _str_datain_);
     
-    for(i=0; i<5; i++)
+    if(!string_split(temp_str, _str_datain_))
     {
-        printf("(%s)\n", temp_str[i]);
+        return COMM_ERROR;
+    }
+   
+    _data_struct_->type_msg =  conver_unsigned_strToint(temp_str[1]);
+  
+    if(_data_struct_->type_msg == COMM_AskType)
+    {
+        _data_struct_->port_number =  conver_unsigned_strToint(temp_str[2]);
+        if(conver_unsigned_strToint(temp_str[3]) != checksum(_str_datain_))
+        {
+            return COMM_ERROR;
+        }
+    }
+    else if(_data_struct_->type_msg == COMM_AnswerType)
+    {
+        _data_struct_->port_number = conver_unsigned_strToint(temp_str[2]);
+        _data_struct_->type_sensor = conver_unsigned_strToint(temp_str[3]);
+        if(conver_unsigned_strToint(temp_str[4]) != checksum(_str_datain_))
+        {
+            return COMM_ERROR;
+        }
+    }
+    else if(_data_struct_->type_msg == COMM_AskData)
+    {
+        _data_struct_->port_number =  conver_unsigned_strToint(temp_str[2]);
+        if(conver_unsigned_strToint(temp_str[3]) != checksum(_str_datain_))
+        {
+            return COMM_ERROR;
+        }
+    }
+    else if(_data_struct_->type_msg == COMM_AnswerData)
+    {
+        _data_struct_->port_number = conver_unsigned_strToint(temp_str[2]);
+        _data_struct_->type_sensor = conver_unsigned_strToint(temp_str[3]);
+        _data_struct_->Sensor.Sensor_1 = conver_strTofloat(temp_str[4]);
+        printf("data: %f\n", conver_strTofloat(temp_str[4]));
     }
     return COMM_OK;
 }
@@ -117,9 +169,10 @@ static void string_cat(char *destination, const char * source)
     *destination = '\0';
 }
 
-static void string_split(char destination[][20], const char *source)
+static char string_split(char destination[][20], const char *source)
 {
     unsigned char i = 0, row = 0, col = 0;
+    
     while(source[i]!='#')
     {
         if(source[i] == ',')
@@ -130,11 +183,29 @@ static void string_split(char destination[][20], const char *source)
         }
         else
         {
-            destination[col][row] = source[i];
+            /*kiểm tra điều kiện nếu data>='0' và data <='9' hoặc '.'*/
+            if(col >= 1)
+            {
+                
+                if(((source[i] >= '0')&&(source[i] <= '9'))||(source[i] == '.')||(source[i] == '-'))
+                {
+                    destination[col][row] = source[i];
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            else
+            {
+                destination[col][row] = source[i];
+            }
             row++;
         }
         i++;
     }
+    destination[col][row] = '\0';
+    return 1;
 }
 
 static char* conver_unsigned_intTostr(const unsigned int _data_)
@@ -167,6 +238,74 @@ static char* conver_unsigned_intTostr(const unsigned int _data_)
     return arr;
 }
 
+static unsigned int conver_unsigned_strToint(const char *_data_)
+{
+    static unsigned int tempdata;
+    tempdata = 0;
+    while(*(_data_)!='\0')
+    {
+        tempdata = (tempdata*10) + (*(_data_) - '0');
+        _data_++;
+    }
+    return tempdata;
+}
+
+static char* conver_floatTostr(const float _data_, unsigned char afterpoint)
+{
+    static char arr[20];
+    unsigned char i;
+    float tempdata = _data_, fpart;
+    unsigned int ipart;
+    arr[0] = '\0';
+    if(_data_ < 0.0)
+    {
+        string_copy(arr, "-");
+        tempdata *= -1.0;
+    }
+    
+    ipart = (int)tempdata;
+    fpart = tempdata - (float)ipart;
+    printf("float: %f\n", fpart);
+    for(i=0; i<afterpoint; i++)
+    {
+        fpart *=10.0;
+    }
+
+    string_cat(arr, conver_unsigned_intTostr(ipart));
+    string_cat(arr,".");
+    string_cat(arr, conver_unsigned_intTostr((unsigned int)fpart));
+    return arr;
+}
+
+static float conver_strTofloat(const char *_data_)
+{
+    static float tempdata = 0.0;
+    tempdata = 0.0;
+    float sign_var = 1.0;
+    unsigned int tempdivide = 10;
+
+    if(*(_data_) == '-')
+    {
+        sign_var = -1.0;
+        _data_++;
+    }
+    
+    while(*(_data_)!='.')
+    {
+        tempdata = (tempdata*10.0) + (*(_data_) - '0');
+        _data_++;
+    }
+    _data_++;
+    while(*(_data_)!='\0')
+    {
+        tempdata +=  (float)(*(_data_) - '0')/tempdivide;
+        tempdivide *= 10;
+        _data_++;
+    }
+    return (tempdata*sign_var);
+}
+
+
 static unsigned char string_cmp_len(const char * destination, const char * source, const unsigned char length)
 {
     int i=0;
@@ -176,7 +315,6 @@ static unsigned char string_cmp_len(const char * destination, const char * sourc
         {
             return 0;
         }
-        //printf("-%c-%c\n", destination[i], source[i]);
     }
     return 1;
 }
@@ -193,3 +331,22 @@ static void string_crc(char * destination)
     string_cat(destination, "#");
 }
 
+static unsigned char checksum(const char *_data_str_)
+{
+    unsigned char location, i;
+    static unsigned char tempcrc;
+    tempcrc = 0;
+    while(*(_data_str_+i)!= '\0')
+    {
+        if(*(_data_str_+i) == ',')
+        {
+            location = i;
+        }
+        i++;
+    }
+    for(i=0; i<=location; i++)
+    {
+        tempcrc ^= *(_data_str_+i);
+    }
+    return tempcrc;
+}

@@ -22,17 +22,19 @@ typedef enum
     Ringbuffer_empty        = 3,
     Ringbuffer_pop_done     = 4,
     Ringbuffer_push_done    = 5,
+    Ringbuffer_get_arr_done = 6,
 }_rb_status_;
 
 /* Includes ------------------------------------------------------------------*/
 
-_rb_status_ ringbuffer_init(_ringbuffer_t *_rb_type_t_, unsigned char *arr_buffer, unsigned int size);
-_rb_status_ ringbuffer_push(_ringbuffer_t *_rb_type_t_, unsigned char data);
-_rb_status_ ringbuffer_pop(_ringbuffer_t *_rb_type_t_, unsigned char *data);
+_rb_status_ ringbuffer_init(_ringbuffer_t *_rb_type_t_, char *arr_buffer, unsigned int size);
+_rb_status_ ringbuffer_push(_ringbuffer_t *_rb_type_t_, char data);
+_rb_status_ ringbuffer_pop(_ringbuffer_t *_rb_type_t_, char *data);
+
+_rb_status_ ringbuffer_get_arr(_ringbuffer_t *_rb_type_t_, char *data);
 
 unsigned int ringbuffer_get_tail(_ringbuffer_t *_rb_type_t_);
 unsigned int ringbuffer_get_head(_ringbuffer_t *_rb_type_t_);
-
 
 #ifdef __cplusplus
 }

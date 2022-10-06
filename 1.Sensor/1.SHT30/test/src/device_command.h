@@ -43,12 +43,33 @@ typedef enum
     COMM_ERROR,
 }_comm_status_e;
 
+
+typedef struct
+{
+    float Sensor_1;
+    float Sensor_2;
+    float Sensor_3;
+    float Sensor_4;
+    float Sensor_5;
+    float Sensor_6;
+    float Sensor_7;
+    float Sensor_8;
+    float Sensor_9;
+    float Sensor_10;
+    float Sensor_11;
+    float Sensor_12;
+    float Sensor_13;
+    float Sensor_14;
+    float Sensor_15;
+}_comm_data_sensor_t;
+
 typedef struct 
 {
     _comm_port_number_e         port_number;
     _comm_type_command_e        type_msg;
     _comm_type_sensor_e         type_sensor;
     char                        datastr[50];
+    _comm_data_sensor_t         Sensor;
 }_comm_data_struct_create_t;
 
 typedef struct 
@@ -56,11 +77,11 @@ typedef struct
     _comm_port_number_e         port_number;
     _comm_type_command_e        type_msg;
     _comm_type_sensor_e         type_sensor;
+    _comm_data_sensor_t         Sensor;
 }_comm_data_struct_detect_t;
 
-
 _comm_status_e comm_create_command(_comm_data_struct_create_t *_data_struct_);
-_comm_status_e comm_detect_command(char *_str_datain_, unsigned char _size_datain_,_comm_data_struct_detect_t *_data_struct_);
+_comm_status_e comm_detect_command(char *_str_datain_, _comm_data_struct_detect_t *_data_struct_);
 
 #ifdef __cplusplus
 }

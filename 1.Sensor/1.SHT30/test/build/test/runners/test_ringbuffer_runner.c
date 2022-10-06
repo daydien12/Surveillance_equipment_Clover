@@ -13,7 +13,9 @@ extern void tearDown(void);
 extern void test_function_ringbuffer_init_successful(void);
 extern void test_function_ringbuffer_init_error(void);
 extern void test_function_ringbuffer_push_pop(void);
-extern void test_function_ringbuffer_push_pop_circular (void);
+extern void test_function_ringbuffer_push_pop_circular(void);
+extern void test_function_ringbuffer_error(void);
+extern void test_function_ringbuffer_get_arr(void);
 
 
 /*=======Mock Management=====*/
@@ -80,8 +82,10 @@ int main(void)
   UnityBegin("test_ringbuffer.c");
   run_test(test_function_ringbuffer_init_successful, "test_function_ringbuffer_init_successful", 14);
   run_test(test_function_ringbuffer_init_error, "test_function_ringbuffer_init_error", 30);
-  run_test(test_function_ringbuffer_push_pop, "test_function_ringbuffer_push_pop", 44);
-  run_test(test_function_ringbuffer_push_pop_circular , "test_function_ringbuffer_push_pop_circular ", 78);
+  run_test(test_function_ringbuffer_push_pop, "test_function_ringbuffer_push_pop", 43);
+  run_test(test_function_ringbuffer_push_pop_circular, "test_function_ringbuffer_push_pop_circular", 76);
+  run_test(test_function_ringbuffer_error, "test_function_ringbuffer_error", 110);
+  run_test(test_function_ringbuffer_get_arr, "test_function_ringbuffer_get_arr", 151);
 
   return UnityEnd();
 }
