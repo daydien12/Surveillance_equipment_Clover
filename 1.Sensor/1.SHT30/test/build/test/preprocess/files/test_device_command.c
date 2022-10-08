@@ -449,7 +449,7 @@ void test_function_command_detect(void)
 
 
 
-     data_test = "$COMM,2,s7,0,29#";
+     data_test = "$COMM,-2,s7,0,29#";
 
     UnityAssertEqualNumber((UNITY_INT)(UNITY_INT8 )((comm_detect_command(data_test, &struct_data_test))), (UNITY_INT)(UNITY_INT8 )((COMM_ERROR)), (
 
