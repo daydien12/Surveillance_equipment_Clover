@@ -1,5 +1,0 @@
-adc_lib.pbi: \
-  C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Sensor\3.Current\user\adc_lib.c \
-  C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Sensor\3.Current\user/adc_lib.h \
-  C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Sensor\3.Current\project\..\library\stm8s.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h

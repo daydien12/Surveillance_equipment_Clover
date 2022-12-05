@@ -1,0 +1,5 @@
+stm8s_it.pbi: \
+  C:\Users\nhanma\Desktop\DV-GW\DV\STM8\1.SHT30\library\stm8s_it.c \
+  C:\Users\nhanma\Desktop\DV-GW\DV\STM8\1.SHT30\library/stm8s_it.h \
+  C:\Users\nhanma\Desktop\DV-GW\DV\STM8\1.SHT30\library/stm8s.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h
