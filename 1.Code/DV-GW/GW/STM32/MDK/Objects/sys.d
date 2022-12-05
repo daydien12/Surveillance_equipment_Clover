@@ -22,4 +22,3 @@
 .\objects\sys.o: C:\Keil_v536\ARM\ARMCC\Bin\..\include\string.h
 .\objects\sys.o: C:\Keil_v536\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\sys.o: ..\USER\device_command.h
-.\objects\sys.o: ..\USER\delay.h

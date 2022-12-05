@@ -1,5 +1,8 @@
 .\objects\main.o: ..\USER\main.c
-.\objects\main.o: ..\USER\sys.h
+.\objects\main.o: ..\USER\gw_sys.h
+.\objects\main.o: ..\USER\gw_uart.h
+.\objects\main.o: C:\Keil_v536\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: C:\Keil_v536\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: C:\Users\nhanma\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h
 .\objects\main.o: .\RTE\_user\RTE_Components.h
 .\objects\main.o: C:\Users\nhanma\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h
@@ -15,11 +18,9 @@
 .\objects\main.o: C:\Users\nhanma\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h
 .\objects\main.o: C:\Users\nhanma\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\main.o: C:\Users\nhanma\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\StdPeriph_Driver\inc\misc.h
-.\objects\main.o: ..\USER\define.h
-.\objects\main.o: ..\USER\gpio.h
-.\objects\main.o: ..\USER\ringbuffer.h
-.\objects\main.o: ..\USER\uart.h
-.\objects\main.o: C:\Keil_v536\ARM\ARMCC\Bin\..\include\string.h
-.\objects\main.o: C:\Keil_v536\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\main.o: ..\USER\device_command.h
-.\objects\main.o: ..\USER\delay.h
+.\objects\main.o: ..\USER\gw_ringbuffer.h
+.\objects\main.o: ..\USER\gw_gpio.h
+.\objects\main.o: ..\USER\gw_define.h
+.\objects\main.o: ..\USER\gw_delay.h
+.\objects\main.o: ..\USER\gw_conver.h
+.\objects\main.o: ..\USER\gw_device_command.h

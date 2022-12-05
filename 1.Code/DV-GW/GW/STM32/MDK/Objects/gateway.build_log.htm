@@ -17,42 +17,34 @@ Library Manager: ArmAr.exe V5.06 update 7 (build 960)
 Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
 CPU DLL:         SARMCM3.DLL V5.36.0.0
 Dialog DLL:      DCM.DLL V1.17.3.0
-Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Target DLL:      CMSIS_AGDI.dll V1.33.0.0
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-C:\Users\nhanma\Desktop\DV-GW\GW\STM32_version2\MDK\gateway.uvprojx
-Project File Date:  12/05/2022
+C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\gateway.uvprojx
+Project File Date:  12/06/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v536\ARM\ARMCC\Bin'
-Build target 'user'
-Note: source file '..\USER\delay.c' - object file renamed from '.\Objects\delay.o' to '.\Objects\delay_1.o'.
-compiling device_command.c...
-..\USER\device_command.c(63): warning:  #111-D: statement is unreachable
-          break;
-..\USER\device_command.c(81): warning:  #111-D: statement is unreachable
-          break;
-..\USER\device_command.c(99): warning:  #188-D: enumerated type mixed with another type
-      _data_struct_->type_msg =  conver_unsigned_strToint(temp_str[1]);
-..\USER\device_command.c(103): warning:  #188-D: enumerated type mixed with another type
-          _data_struct_->port_number =  conver_unsigned_strToint(temp_str[2]);
-..\USER\device_command.c(111): warning:  #188-D: enumerated type mixed with another type
-          _data_struct_->port_number = conver_unsigned_strToint(temp_str[2]);
-..\USER\device_command.c(112): warning:  #188-D: enumerated type mixed with another type
-          _data_struct_->type_sensor = conver_unsigned_strToint(temp_str[3]);
-..\USER\device_command.c(120): warning:  #188-D: enumerated type mixed with another type
-          _data_struct_->port_number =  conver_unsigned_strToint(temp_str[2]);
-..\USER\device_command.c(128): warning:  #188-D: enumerated type mixed with another type
-          _data_struct_->port_number = conver_unsigned_strToint(temp_str[2]);
-..\USER\device_command.c(129): warning:  #188-D: enumerated type mixed with another type
-          _data_struct_->type_sensor = conver_unsigned_strToint(temp_str[3]);
-..\USER\device_command.c(350): warning:  #1-D: last line of file ends without a newline
-  }
-..\USER\device_command.c: 10 warnings, 0 errors
+Rebuild target 'user'
+compiling gw_ringbuffer.c...
+compiling gw_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling misc.c...
+compiling gw_conver.c...
+compiling main.c...
+compiling gw_device_command.c...
+assembling startup_stm32f10x_md.s...
+compiling gw_sys.c...
+compiling gw_delay.c...
+compiling stm32f10x_gpio.c...
+compiling gw_uart.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim.c...
+compiling system_stm32f10x.c...
 linking...
-Program Size: Code=3284 RO-data=268 RW-data=52 ZI-data=1724  
-".\Objects\gateway.axf" - 0 Error(s), 10 Warning(s).
+Program Size: Code=11988 RO-data=412 RW-data=36 ZI-data=1836  
+".\Objects\gateway.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -85,21 +77,21 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
       Source file:   Device\Source\system_stm32f10x.c
       Include file:  RTE_Driver\Config\RTE_Device.h
-      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
-      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
 
    * Component: Keil::Device:StdPeriph Drivers:Framework:3.6.0
-      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
-      Include file:  Device\StdPeriph_Driver\inc\misc.h
       Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
       Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
       Source file:   Device\StdPeriph_Driver\src\misc.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
 
    * Component: Keil::Device:StdPeriph Drivers:GPIO:3.6.0
-      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
 
    * Component: Keil::Device:StdPeriph Drivers:RCC:3.6.0
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
@@ -110,9 +102,9 @@ Package Vendor: Keil
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
 
    * Component: Keil::Device:StdPeriph Drivers:USART:3.6.0
-      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
-Build Time Elapsed:  00:00:00
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

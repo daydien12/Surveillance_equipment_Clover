@@ -1,10 +1,10 @@
-#include "sys.h"
+#include "gw_sys.h"
 
 int main()
 {
-	Fn_Sys_Init();
+	Gw_Sys_Init();
 	while(1)
 	{
-		Fn_Sys_Run();
+		Gw_Sys_Run();
 	}
 }
