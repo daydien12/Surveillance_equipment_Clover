@@ -12,10 +12,6 @@ void Gw_Sys_Init(void)
 	Gw_GPIO_Init();
 	Gw_DELAY_Init(72);
 	
-	Gw_GPIO_Set_ON(3);
-	Gw_GPIO_Set_ON(4);
-	Gw_GPIO_Set_ON(5);
-	
 	_comm_data_struct_create_t vrst_struct_create_;
 	vrst_struct_create_.in1_type_msg = COMM_AnswerData;
 	vrst_struct_create_.in2_port_number = COMM_Port1;
@@ -23,6 +19,7 @@ void Gw_Sys_Init(void)
 	vrst_struct_create_.in4_data_sensor.in1_data = -12345.235;
 	vrst_struct_create_.in4_data_sensor.in2_data = -0.235;
 	status = comm_create_command(&vrst_struct_create_);
+	
 	if(status == COMM_OK)
 	{
 		Gw_Uart1_SendString(vrst_struct_create_.out_datastr);
@@ -40,10 +37,6 @@ void Gw_Sys_Init(void)
 }
 void Gw_Sys_Run(void)
 {
-//	for(int i = 0; i < 6; i++)
-//	{
-//		printf("Port %d: %d\n", i, GPIO_ReadInputDataBit(GPIOB, GET_GPIO_PORTB_Arr[i]));
-//		Delay_Ms(10);
-//	}	
-//	printf("---------------------------\n");
+	Gw_Test_Run();
+	Gw_DELAY_ms(1000);
 }

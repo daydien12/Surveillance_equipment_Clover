@@ -63,11 +63,13 @@ void UART_Init(unsigned int select)
   UART1->CR2  = (1<<2) | (1<<3) | (1<<5);
   enableInterrupts();
 }
+
 void UART_Send_Char(char _varChar)
 {
   UART1->DR = _varChar;
   while(!(UART1->SR & (1<<7)));
 }
+
 void UART_Send_String(char *_varString)
 {
    while(*_varString)
@@ -76,15 +78,18 @@ void UART_Send_String(char *_varString)
         _varString++;
     }
 }
+
 void UART_Send_Number(int _varNumber)
 {
   sprintf(Number,"%d.",_varNumber);
   UART_Send_String(Number);
 }
+
 void UART_Send_Array_RX(void)
 {
   UART_Send_String(RRX);
 }
+
 int  UART_Compare(char *string)
 {
   if(strstr(RRX,string)!=NULL)

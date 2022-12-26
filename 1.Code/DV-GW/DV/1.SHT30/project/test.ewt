@@ -2174,6 +2174,12 @@
             <name>$PROJ_DIR$\..\user\dv_sht30.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\user\dv_sys.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\user\dv_test.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\user\dv_uart.h</name>
         </file>
     </group>
@@ -2214,6 +2220,12 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\dv_sht30.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\user\dv_sys.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\user\dv_test.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\dv_uart.c</name>

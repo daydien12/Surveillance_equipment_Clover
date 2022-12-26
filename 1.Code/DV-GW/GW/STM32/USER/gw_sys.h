@@ -8,6 +8,7 @@
 
 #include "gw_uart.h"
 #include "gw_gpio.h"
+#include "gw_test.h"
 #include "gw_delay.h"
 #include "gw_define.h" 
 #include "stm32f10x.h"   

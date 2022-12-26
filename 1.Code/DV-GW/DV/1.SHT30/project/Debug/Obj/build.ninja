@@ -27,12 +27,15 @@ build dv_device_command.pbi : index dv_device_command.xcl
 build dv_i2c.pbi : index dv_i2c.xcl
 build dv_ringbuffer.pbi : index dv_ringbuffer.xcl
 build dv_sht30.pbi : index dv_sht30.xcl
+build dv_sys.pbi : index dv_sys.xcl
+build dv_test.pbi : index dv_test.xcl
 build dv_uart.pbi : index dv_uart.xcl
 build main.pbi : index main.xcl
 build test_part0.pbi : link stm8s_it.pbi dv_conver.pbi dv_delay.pbi
 build test_part1.pbi : link dv_device_command.pbi dv_i2c.pbi dv_ringbuffer.pbi
-build test_part2.pbi : link dv_sht30.pbi dv_uart.pbi main.pbi
-build test.pbd : link test_part0.pbi test_part1.pbi test_part2.pbi
+build test_part2.pbi : link dv_sht30.pbi dv_sys.pbi dv_test.pbi
+build test_part3.pbi : link dv_uart.pbi main.pbi
+build test.pbd : link test_part0.pbi test_part1.pbi test_part2.pbi test_part3.pbi
 build test.pbw : browsedata test.pbd
 
 

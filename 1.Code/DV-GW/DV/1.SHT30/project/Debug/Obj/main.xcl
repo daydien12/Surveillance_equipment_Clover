@@ -1,26 +1,26 @@
-"C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\user\main.c"
+"C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\user\main.c"
 -std=c99
 -ferror-limit=0
 -fbracket-depth=512
 -MD
 -MF
-C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\project\Debug\Obj\main.pbi.dep
+C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\project\Debug\Obj\main.pbi.dep
 -o
 main.pbi
 -I
-C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\user
+C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\user
 -I
-C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\project\..\library
+C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\project\..\library
 -I
-C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\project\..\user
+C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\project\..\user
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\inc\c
 -I
-C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\library
+C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\library
 -I
-C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\user
+C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\user
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

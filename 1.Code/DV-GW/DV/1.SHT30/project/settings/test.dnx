@@ -45,7 +45,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>4267485820</Checksum>
+        <Checksum>4021059205</Checksum>
     </DebugChecksum>
     <CallStack>
         <ShowArgs>0</ShowArgs>
@@ -76,10 +76,11 @@
         <Count>0</Count>
     </Breakpoints>
     <Aliases>
-        <A0>_ "E:\1.MCU\1.STM8\3.project_STM8S103F3P6\0.Test\library\stm8s_it.c" ""</A0>
-        <A1>_ "E:\1.STM8\3.project_STM8S103F3P6\0.Test\user\uart.c" ""</A1>
-        <A2>_ "F:\1.STM8\Code_STM8S103F3P6\0.Test\user\uart.c" ""</A2>
-        <Count>3</Count>
+        <A0>_ "C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\user\main.c" ""</A0>
+        <A1>_ "E:\1.MCU\1.STM8\3.project_STM8S103F3P6\0.Test\library\stm8s_it.c" ""</A1>
+        <A2>_ "E:\1.STM8\3.project_STM8S103F3P6\0.Test\user\uart.c" ""</A2>
+        <A3>_ "F:\1.STM8\Code_STM8S103F3P6\0.Test\user\uart.c" ""</A3>
+        <Count>4</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
     <DebuggerSettings>
