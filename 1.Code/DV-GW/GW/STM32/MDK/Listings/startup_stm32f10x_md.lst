@@ -475,14 +475,14 @@ ARM Macro Assembler    Page 8
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=.\objects\startup_stm32f10x_md.d -o.\objects\startup_stm32f10x_md.
-o -IC:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW
-\GW\STM32\MDK\RTE -IC:\Users\nhanma\Documents\github\Surveillance_equipment_Clo
-ver\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8 -IC:\Keil_v517\ARM\PACK\AR
-M\CMSIS\4.5.0\CMSIS\Include -IC:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\De
-vice\Include -IC:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_
-Driver\inc --predefine="__UVISION_VERSION SETA 517" --predefine="_RTE_ SETA 1" 
---predefine="STM32F10X_MD SETA 1" --list=.\listings\startup_stm32f10x_md.lst RT
-E\Device\STM32F103C8\startup_stm32f10x_md.s
+o -IC:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Co
+de\DV-GW\GW\STM32\MDK\RTE -IC:\Users\nguye\OneDrive\Documents\GitHub\Surveillan
+ce_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8 -IC:\Keil_
+v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include -IC:\Keil_v517\ARM\PACK\Keil\S
+TM32F1xx_DFP\2.1.0\Device\Include -IC:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.
+1.0\Device\StdPeriph_Driver\inc --predefine="__UVISION_VERSION SETA 517" --pred
+efine="_RTE_ SETA 1" --predefine="STM32F10X_MD SETA 1" --list=.\listings\startu
+p_stm32f10x_md.lst RTE\Device\STM32F103C8\startup_stm32f10x_md.s
 
 
 

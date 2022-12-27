@@ -79,13 +79,13 @@ void UART_Send_Char(char _varChar)
 
 void UART_Send_String(char *_varString)
 {
-   //GPIO_WriteHigh(GPIOD,GPIO_PIN_4);
+   GPIO_WriteHigh(GPIOD,GPIO_PIN_4);
    while(*_varString)
     {
         UART_Send_Char(*_varString);
         _varString++;
     }
-    //GPIO_WriteLow(GPIOD,GPIO_PIN_4);
+    GPIO_WriteLow(GPIOD,GPIO_PIN_4);
 }
 
 void UART_Send_Number(int _varNumber)

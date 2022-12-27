@@ -45,7 +45,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>1956441171</Checksum>
+        <Checksum>3115672723</Checksum>
     </DebugChecksum>
     <CallStack>
         <ShowArgs>0</ShowArgs>
@@ -63,24 +63,25 @@
         <GraphEnabled>0</GraphEnabled>
         <ShowTimeLog>1</ShowTimeLog>
     </DataSample>
-    <Breakpoints>
-        <Count>0</Count>
-    </Breakpoints>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
     </TermIOLog>
+    <Breakpoints>
+        <Count>0</Count>
+    </Breakpoints>
     <LogFile>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
         <Category>_ 0</Category>
     </LogFile>
     <Aliases>
-        <A0>_ "C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\user\main.c" ""</A0>
-        <A1>_ "E:\1.MCU\1.STM8\3.project_STM8S103F3P6\0.Test\library\stm8s_it.c" ""</A1>
-        <A2>_ "E:\1.STM8\3.project_STM8S103F3P6\0.Test\user\uart.c" ""</A2>
-        <A3>_ "F:\1.STM8\Code_STM8S103F3P6\0.Test\user\uart.c" ""</A3>
-        <Count>4</Count>
+        <A0>_ "C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\user\dv_i2c.c" ""</A0>
+        <A1>_ "C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\DV\1.SHT30\user\main.c" ""</A1>
+        <A2>_ "E:\1.MCU\1.STM8\3.project_STM8S103F3P6\0.Test\library\stm8s_it.c" ""</A2>
+        <A3>_ "E:\1.STM8\3.project_STM8S103F3P6\0.Test\user\uart.c" ""</A3>
+        <A4>_ "F:\1.STM8\Code_STM8S103F3P6\0.Test\user\uart.c" ""</A4>
+        <Count>5</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
     <DebuggerSettings>

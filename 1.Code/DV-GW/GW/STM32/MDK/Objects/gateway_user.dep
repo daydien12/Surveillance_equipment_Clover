@@ -1,268 +1,268 @@
 Dependencies for Project 'gateway', Target 'user': (DO NOT MODIFY !)
-F (..\USER\gw_conver.h)(0x63A9A36F)()
-F (..\USER\gw_delay.h)(0x63A9A36F)()
-F (..\USER\gw_sys.h)(0x63A9A36F)()
-F (..\USER\gw_gpio.h)(0x63A9A36F)()
-F (..\USER\gw_define.h)(0x63A9A36F)()
-F (..\USER\gw_uart.h)(0x63A9A36F)()
-F (..\USER\gw_device_command.h)(0x63A9A36F)()
-F (..\USER\gw_ringbuffer.h)(0x63A9A36F)()
-F (..\USER\gw_test.h)(0x63AA3E19)()
-F (..\USER\main.c)(0x63A9A36F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (..\USER\gw_sys.h)(0x63A9A36F)
-I (..\USER\gw_uart.h)(0x63A9A36F)
+F (..\USER\gw_conver.h)(0x63AAF03B)()
+F (..\USER\gw_delay.h)(0x63AAF03B)()
+F (..\USER\gw_sys.h)(0x63AAF03B)()
+F (..\USER\gw_gpio.h)(0x63AAF03B)()
+F (..\USER\gw_define.h)(0x63AAF03B)()
+F (..\USER\gw_uart.h)(0x63AAF03B)()
+F (..\USER\gw_device_command.h)(0x63AAF03B)()
+F (..\USER\gw_ringbuffer.h)(0x63AAF03B)()
+F (..\USER\gw_test.h)(0x63AAF03B)()
+F (..\USER\main.c)(0x63AAF03B)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\USER\gw_sys.h)(0x63AAF03B)
+I (..\USER\gw_uart.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\ARMCC\include\stdio.h)(0x55DB3986)
 I (C:\Keil_v517\ARM\ARMCC\include\string.h)(0x55DB3988)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9F930)
-I (..\USER\gw_ringbuffer.h)(0x63A9A36F)
-I (..\USER\gw_gpio.h)(0x63A9A36F)
-I (..\USER\gw_define.h)(0x63A9A36F)
-I (..\USER\gw_test.h)(0x63AA3E19)
-I (..\USER\gw_delay.h)(0x63A9A36F)
-I (..\USER\gw_conver.h)(0x63A9A36F)
-I (..\USER\gw_device_command.h)(0x63A9A36F)
-F (..\USER\gw_conver.c)(0x63A9A36F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_conver.o --omf_browse .\objects\gw_conver.crf --depend .\objects\gw_conver.d)
-I (..\USER\gw_conver.h)(0x63A9A36F)
+I (..\USER\gw_ringbuffer.h)(0x63AAF03B)
+I (..\USER\gw_gpio.h)(0x63AAF03B)
+I (..\USER\gw_define.h)(0x63AAF03B)
+I (..\USER\gw_test.h)(0x63AAF03B)
+I (..\USER\gw_delay.h)(0x63AAF03B)
+I (..\USER\gw_conver.h)(0x63AAF03B)
+I (..\USER\gw_device_command.h)(0x63AAF03B)
+F (..\USER\gw_conver.c)(0x63AAF03B)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_conver.o --omf_browse .\objects\gw_conver.crf --depend .\objects\gw_conver.d)
+I (..\USER\gw_conver.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9F930)
-I (..\USER\gw_define.h)(0x63A9A36F)
+I (..\USER\gw_define.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\ARMCC\include\math.h)(0x55DB398E)
-F (..\USER\gw_delay.c)(0x63A9A36F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_delay.o --omf_browse .\objects\gw_delay.crf --depend .\objects\gw_delay.d)
+F (..\USER\gw_delay.c)(0x63AAF03B)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_delay.o --omf_browse .\objects\gw_delay.crf --depend .\objects\gw_delay.d)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9F930)
-I (..\USER\gw_delay.h)(0x63A9A36F)
-F (..\USER\gw_sys.c)(0x63A9A36F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_sys.o --omf_browse .\objects\gw_sys.crf --depend .\objects\gw_sys.d)
-I (..\USER\gw_sys.h)(0x63A9A36F)
-I (..\USER\gw_uart.h)(0x63A9A36F)
+I (..\USER\gw_delay.h)(0x63AAF03B)
+F (..\USER\gw_sys.c)(0x63AAF912)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_sys.o --omf_browse .\objects\gw_sys.crf --depend .\objects\gw_sys.d)
+I (..\USER\gw_sys.h)(0x63AAF03B)
+I (..\USER\gw_uart.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\ARMCC\include\stdio.h)(0x55DB3986)
 I (C:\Keil_v517\ARM\ARMCC\include\string.h)(0x55DB3988)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9F930)
-I (..\USER\gw_ringbuffer.h)(0x63A9A36F)
-I (..\USER\gw_gpio.h)(0x63A9A36F)
-I (..\USER\gw_define.h)(0x63A9A36F)
-I (..\USER\gw_test.h)(0x63AA3E19)
-I (..\USER\gw_delay.h)(0x63A9A36F)
-I (..\USER\gw_conver.h)(0x63A9A36F)
-I (..\USER\gw_device_command.h)(0x63A9A36F)
-F (..\USER\gw_gpio.c)(0x63A9A36F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_gpio.o --omf_browse .\objects\gw_gpio.crf --depend .\objects\gw_gpio.d)
-I (..\USER\gw_gpio.h)(0x63A9A36F)
+I (..\USER\gw_ringbuffer.h)(0x63AAF03B)
+I (..\USER\gw_gpio.h)(0x63AAF03B)
+I (..\USER\gw_define.h)(0x63AAF03B)
+I (..\USER\gw_test.h)(0x63AAF03B)
+I (..\USER\gw_delay.h)(0x63AAF03B)
+I (..\USER\gw_conver.h)(0x63AAF03B)
+I (..\USER\gw_device_command.h)(0x63AAF03B)
+F (..\USER\gw_gpio.c)(0x63AAF03B)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_gpio.o --omf_browse .\objects\gw_gpio.crf --depend .\objects\gw_gpio.d)
+I (..\USER\gw_gpio.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9F930)
-I (..\USER\gw_define.h)(0x63A9A36F)
-F (..\USER\gw_uart.c)(0x63A9A36F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_uart.o --omf_browse .\objects\gw_uart.crf --depend .\objects\gw_uart.d)
-I (..\USER\gw_uart.h)(0x63A9A36F)
+I (..\USER\gw_define.h)(0x63AAF03B)
+F (..\USER\gw_uart.c)(0x63AAFAEE)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_uart.o --omf_browse .\objects\gw_uart.crf --depend .\objects\gw_uart.d)
+I (..\USER\gw_uart.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\ARMCC\include\stdio.h)(0x55DB3986)
 I (C:\Keil_v517\ARM\ARMCC\include\string.h)(0x55DB3988)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9F930)
-I (..\USER\gw_ringbuffer.h)(0x63A9A36F)
-F (..\USER\gw_device_command.c)(0x63A9A36F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_device_command.o --omf_browse .\objects\gw_device_command.crf --depend .\objects\gw_device_command.d)
-I (..\USER\gw_conver.h)(0x63A9A36F)
+I (..\USER\gw_ringbuffer.h)(0x63AAF03B)
+F (..\USER\gw_device_command.c)(0x63AAF03B)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_device_command.o --omf_browse .\objects\gw_device_command.crf --depend .\objects\gw_device_command.d)
+I (..\USER\gw_conver.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9F930)
-I (..\USER\gw_define.h)(0x63A9A36F)
-I (..\USER\gw_device_command.h)(0x63A9A36F)
-F (..\USER\gw_ringbuffer.c)(0x63A9A36F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_ringbuffer.o --omf_browse .\objects\gw_ringbuffer.crf --depend .\objects\gw_ringbuffer.d)
-I (..\USER\gw_ringbuffer.h)(0x63A9A36F)
-F (..\USER\gw_test.c)(0x63AA4141)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_test.o --omf_browse .\objects\gw_test.crf --depend .\objects\gw_test.d)
-I (..\USER\gw_test.h)(0x63AA3E19)
-I (..\USER\gw_uart.h)(0x63A9A36F)
+I (..\USER\gw_define.h)(0x63AAF03B)
+I (..\USER\gw_device_command.h)(0x63AAF03B)
+F (..\USER\gw_ringbuffer.c)(0x63AAF03B)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_ringbuffer.o --omf_browse .\objects\gw_ringbuffer.crf --depend .\objects\gw_ringbuffer.d)
+I (..\USER\gw_ringbuffer.h)(0x63AAF03B)
+F (..\USER\gw_test.c)(0x63AAFFF6)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\gw_test.o --omf_browse .\objects\gw_test.crf --depend .\objects\gw_test.d)
+I (..\USER\gw_test.h)(0x63AAF03B)
+I (..\USER\gw_uart.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\ARMCC\include\stdio.h)(0x55DB3986)
 I (C:\Keil_v517\ARM\ARMCC\include\string.h)(0x55DB3988)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9F930)
-I (..\USER\gw_ringbuffer.h)(0x63A9A36F)
-I (..\USER\gw_gpio.h)(0x63A9A36F)
-I (..\USER\gw_define.h)(0x63A9A36F)
-I (..\USER\gw_delay.h)(0x63A9A36F)
-I (..\USER\gw_conver.h)(0x63A9A36F)
-I (..\USER\gw_device_command.h)(0x63A9A36F)
-F (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\misc.c)(0x52F9F930)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
+I (..\USER\gw_ringbuffer.h)(0x63AAF03B)
+I (..\USER\gw_gpio.h)(0x63AAF03B)
+I (..\USER\gw_define.h)(0x63AAF03B)
+I (..\USER\gw_delay.h)(0x63AAF03B)
+I (..\USER\gw_conver.h)(0x63AAF03B)
+I (..\USER\gw_device_command.h)(0x63AAF03B)
+F (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\misc.c)(0x52F9F930)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x52F9F930)
-F (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_gpio.c)(0x52F9F930)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\stm32f10x_gpio.o --omf_browse .\objects\stm32f10x_gpio.crf --depend .\objects\stm32f10x_gpio.d)
+F (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_gpio.c)(0x52F9F930)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\stm32f10x_gpio.o --omf_browse .\objects\stm32f10x_gpio.crf --depend .\objects\stm32f10x_gpio.d)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9F930)
-F (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_rcc.c)(0x52F9F930)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\stm32f10x_rcc.o --omf_browse .\objects\stm32f10x_rcc.crf --depend .\objects\stm32f10x_rcc.d)
+F (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_rcc.c)(0x52F9F930)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\stm32f10x_rcc.o --omf_browse .\objects\stm32f10x_rcc.crf --depend .\objects\stm32f10x_rcc.d)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9F930)
-F (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_tim.c)(0x52F9F930)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\stm32f10x_tim.o --omf_browse .\objects\stm32f10x_tim.crf --depend .\objects\stm32f10x_tim.d)
+F (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_tim.c)(0x52F9F930)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\stm32f10x_tim.o --omf_browse .\objects\stm32f10x_tim.crf --depend .\objects\stm32f10x_tim.d)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9F930)
-F (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_usart.c)(0x52F9F930)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\stm32f10x_usart.o --omf_browse .\objects\stm32f10x_usart.crf --depend .\objects\stm32f10x_usart.d)
+F (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_usart.c)(0x52F9F930)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\stm32f10x_usart.o --omf_browse .\objects\stm32f10x_usart.crf --depend .\objects\stm32f10x_usart.d)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9F930)
-F (RTE\Device\STM32F103C8\RTE_Device.h)(0x63A9A36F)()
-F (RTE\Device\STM32F103C8\startup_stm32f10x_md.s)(0x63A9A36F)(--cpu Cortex-M3 -g --apcs=interwork -I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc--pd "__UVISION_VERSION SETA 517" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
-F (RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)()
-F (RTE\Device\STM32F103C8\system_stm32f10x.c)(0x63A9A36F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
+F (RTE\Device\STM32F103C8\RTE_Device.h)(0x63AAF03B)()
+F (RTE\Device\STM32F103C8\startup_stm32f10x_md.s)(0x63AAF03B)(--cpu Cortex-M3 -g --apcs=interwork -I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc--pd "__UVISION_VERSION SETA 517" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
+F (RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)()
+F (RTE\Device\STM32F103C8\system_stm32f10x.c)(0x63AAF03B)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE-I C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8-I C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA1B70)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63A9A3E3)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625C51C)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\RTE_Components.h)(0x63AAF03B)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625B160)
-I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625B160)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Keil_v517\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3F6F2)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E3C4C)
-I (C:\Users\nhanma\Documents\github\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63A9A36F)
+I (C:\Users\nguye\OneDrive\Documents\GitHub\Surveillance_equipment_Clover\1.Code\DV-GW\GW\STM32\MDK\RTE\Device\STM32F103C8\stm32f10x_conf.h)(0x63AAF03B)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x52F9F930)
 I (C:\Keil_v517\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9F930)

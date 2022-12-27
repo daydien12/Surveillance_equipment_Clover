@@ -100,14 +100,14 @@ void Gw_Uart2_SendChar(char data)
 
 void Gw_Uart2_SendString(char *data)
 {
-  GPIO_SetBits(GPIOA, GPIO_Pin_4);
+  GPIO_SetBits(PORT_CONTROL_RS485, GPIO_CONTROL_RS485);
   while (*data)
   {
     Gw_Uart2_SendChar(*data);
     data++;
   }
   Gw_Uart2_SendChar('\0');
-  GPIO_ResetBits(GPIOA, GPIO_Pin_4);
+   GPIO_ResetBits(PORT_CONTROL_RS485, GPIO_CONTROL_RS485);
 }
 
 void Gw_Uart2_SendByte(uint8_t *data, uint8_t sizes)
@@ -166,34 +166,37 @@ void USART1_IRQHandler(void)
   }
 }
 
-void USART2_IRQHandler(void)
-{
-	char temp_data;
-  if ((USART2->SR & USART_SR_RXNE) != 0)
-  {
-    Flag2_Receive = 1;
-    temp_data = USART_ReceiveData(USART2);
-    ringbuffer_push(&ringbuffer_Test, temp_data);
-  }
-  USART_ClearITPendingBit(USART2, USART_SR_RXNE);
-}
-
-//void USART2_IRQHandler(void) {
-//  char temp_data;
+//void USART2_IRQHandler(void)
+//{
+//	char temp_data;
 //  if ((USART2->SR & USART_SR_RXNE) != 0)
 //  {
-//    temp_data = USART2->DR;
-//    Array2_Receive[Count2_Data] = temp_data;
-//    Count2_Data++;
-//
-//    if(Count2_Data >= 9)
-//    {
-//      Array2_Receive[Count2_Data] = 0;
-//      Flag2_Receive = 1;
-//      Count2_Data = 0;
-//    }
+//    Flag2_Receive = 1;
+//    temp_data = USART_ReceiveData(USART2);
+//    ringbuffer_push(&ringbuffer_Test, temp_data);
 //  }
+//  USART_ClearITPendingBit(USART2, USART_SR_RXNE);
 //}
+
+void USART2_IRQHandler(void) {
+  char temp_data = 0;
+  if ((USART2->SR & USART_SR_RXNE) != 0)
+  {
+    temp_data = USART_ReceiveData(USART2);
+    if (temp_data != '!')
+    {
+      Array2_Receive[Count2_Data] = temp_data;
+      Count2_Data++;
+    }
+    else
+    {
+      Array2_Receive[Count2_Data] = 0;
+      Flag2_Receive = 1;
+      Count2_Data = 0;
+    }
+  }
+	USART_ClearITPendingBit(USART2, USART_SR_RXNE);
+}
 
 void USART3_IRQHandler(void)
 {

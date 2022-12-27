@@ -9,7 +9,10 @@ void Dv_Test_Init(void)
 void Dv_Test_Run(void)
 {
   //Dv_Test_Sensor(1);
-  Dv_Test_Rs485_Get();
+  //Dv_Test_Rs485_Get();
+  Dv_Test_Rs485_Send("Quang Bien \n!!");
+  Dv_Delay_Ms(1000);
+
 }
 
 void Dv_Test_Sensor(uint8_t mode)
@@ -36,5 +39,5 @@ void Dv_Test_Rs485_Get(void)
 
 void Dv_Test_Rs485_Send(char *data)
 {
-  
+  UART_Send_String(data);
 }
