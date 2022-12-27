@@ -9,5 +9,5 @@ void Dv_Sys_Init(void)
 void Dv_Sys_Run(void)
 {
    Dv_Test_Run();
-   Dv_Delay_Ms(1000);
+   //Dv_Delay_Ms(1000);
 }

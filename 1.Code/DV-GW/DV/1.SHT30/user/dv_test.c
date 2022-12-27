@@ -8,7 +8,8 @@ void Dv_Test_Init(void)
 
 void Dv_Test_Run(void)
 {
-  Dv_Test_Sensor(1);
+  //Dv_Test_Sensor(1);
+  Dv_Test_Rs485_Get();
 }
 
 void Dv_Test_Sensor(uint8_t mode)
@@ -27,7 +28,10 @@ void Dv_Test_Sensor(uint8_t mode)
 
 void Dv_Test_Rs485_Get(void)
 {
-  
+  if(UART_Flag())
+  {
+    UART_Send_Array_RX();
+  }
 }
 
 void Dv_Test_Rs485_Send(char *data)

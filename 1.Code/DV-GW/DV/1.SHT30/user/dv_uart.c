@@ -30,6 +30,8 @@
 #include "stm8s.h"
 #include "string.h"
 #include "stdio.h"
+#include "dv_gpio.h"
+#include "dv_ringbuffer.h"
 #define string_size 80
 
 char RX_FLAG_END_LINE = 0;
@@ -38,6 +40,9 @@ unsigned int RXI = 0;
 char temp_char;
 char Number[1];
 
+_ringbuffer_t ringbuffer_data;
+
+void UART_Rs485_Init(void);
 void UART_Init(unsigned int select)
 {
   CLK->CKDIVR = 0;
@@ -62,6 +67,8 @@ void UART_Init(unsigned int select)
   UART1->CR1  = (0<<5);
   UART1->CR2  = (1<<2) | (1<<3) | (1<<5);
   enableInterrupts();
+  UART_Rs485_Init();
+  ringbuffer_init(&ringbuffer_data, RRX, string_size);
 }
 
 void UART_Send_Char(char _varChar)
@@ -72,11 +79,13 @@ void UART_Send_Char(char _varChar)
 
 void UART_Send_String(char *_varString)
 {
+   //GPIO_WriteHigh(GPIOD,GPIO_PIN_4);
    while(*_varString)
     {
         UART_Send_Char(*_varString);
         _varString++;
     }
+    //GPIO_WriteLow(GPIOD,GPIO_PIN_4);
 }
 
 void UART_Send_Number(int _varNumber)
@@ -106,11 +115,19 @@ int  UART_Flag(void)
     }
   return 0;
 }
+
+void UART_Rs485_Init(void)
+{
+  GPIO_DeInit(GPIOD);
+  GPIO_Init(GPIOD, GPIO_PIN_4, GPIO_MODE_OUT_PP_LOW_FAST);
+  GPIO_WriteLow(GPIOD,GPIO_PIN_4);
+}
+
 INTERRUPT_HANDLER(UART1_RX_IRQHandler, 18)
  {
    
      temp_char = UART1->DR;
-     if(temp_char!='\n')
+     if(temp_char!='!')
      {
        RRX[RXI] = temp_char;
        RXI++;

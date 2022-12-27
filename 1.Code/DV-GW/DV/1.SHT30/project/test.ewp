@@ -1648,6 +1648,9 @@
             <name>$PROJ_DIR$\..\user\dv_device_command.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\user\dv_gpio.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\user\dv_i2c.h</name>
         </file>
         <file>
@@ -1661,6 +1664,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\dv_test.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\user\dv_time.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\dv_uart.h</name>
@@ -1696,6 +1702,9 @@
             <name>$PROJ_DIR$\..\user\dv_device_command.c</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\user\dv_gpio.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\user\dv_i2c.c</name>
         </file>
         <file>
@@ -1709,6 +1718,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\dv_test.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\user\dv_time.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\dv_uart.c</name>

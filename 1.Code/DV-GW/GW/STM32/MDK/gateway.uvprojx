@@ -456,6 +456,11 @@
               <FileType>5</FileType>
               <FilePath>..\USER\gw_ringbuffer.h</FilePath>
             </File>
+            <File>
+              <FileName>gw_test.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\USER\gw_test.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -500,6 +505,11 @@
               <FileName>gw_ringbuffer.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\USER\gw_ringbuffer.c</FilePath>
+            </File>
+            <File>
+              <FileName>gw_test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\gw_test.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -34,21 +34,36 @@ void Gw_Test_Gpio_ReadStt(uint8_t _mode_)
 {
 	uint8_t i = 0, arrget[6] = {0, 0, 0, 0, 0, 0};
 	char arrchar[20];
-	for(i=0; i<6; i++)
+	if(_mode_)
 	{
-		arrget[i] = GPIO_ReadInputDataBit(GPIOB, GPIO_PORTB_Arr[i]);
+		for(i=0; i<6; i++)
+		{
+			arrget[i] = GPIO_ReadInputDataBit(GPIOB, GPIO_PORTB_Arr[i]);
+		}
+		for(i=0; i<6; i++)
+		{
+			sprintf(arrchar,"Arr[%d]: %d\n", i, arrget[i]);
+			Gw_Uart1_SendString(arrchar);
+		}
+		Gw_Uart1_SendString("-----------------------------------------\n");
 	}
-	for(i=0; i<6; i++)
-	{
-		sprintf(arrchar,"Arr[%d]: %d\n", i, arrget[i]);
-		Gw_Uart1_SendString(arrchar);
-	}
-	Gw_Uart1_SendString("-----------------------------------------\n");
+}
+
+void Gw_Test_Rs485_Get(void)
+{
+	
+}
+
+void Gw_Test_Rs485_Send(char *data)
+{
+	Gw_Uart2_SendString(data);
+	//Gw_Uart2_SendString("\n");
 }
 
 void Gw_Test_Run(void)
 {
-	Gw_Test_Uart();
+	//Gw_Test_Uart();
 	Gw_Test_Gpio_Control(GPIO_CONTROL_ENA_ALL);
-	Gw_Test_Gpio_ReadStt(5);
+	//Gw_Test_Gpio_ReadStt(1);
+	Gw_Test_Rs485_Send("xin chao!");
 }

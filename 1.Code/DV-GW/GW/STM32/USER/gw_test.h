@@ -27,6 +27,8 @@ void Gw_Test_Uart(void);
 void Gw_Test_Gpio_ReadStt(uint8_t _mode_);
 void Gw_Test_Gpio_Control(gpio_Control_en _stt_);
 
+void Gw_Test_Rs485_Get(void);
+void Gw_Test_Rs485_Send(char *data);
 #ifdef __cplusplus
 }
 #endif
